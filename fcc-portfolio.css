@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome-section h3 {    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#welcome-section, #profile {
+    height: 100vh;
+    background-color: rgb(56, 65, 95);
+}
+
+#projects {
+    padding: 20px;
+    background-color: rgba(65, 64, 68, 0.897);
+    position: relative;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    width: 400px;
+}
+
+.project-tile {
+    width: 400px;
+    margin: 20px;
+}
+
+.project-tile a, #profile a {
+    text-decoration: none;
+}
+
+.project-tile h6 {
+    color: rgb(255, 215, 215);
+    background-color: rgb(109, 13, 13);
+    padding: 15px;
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+#profile {
+    vertical-align: bottom;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 600px;
+}
+#profile h3 {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+svg {
+    width: 30px;
+}
+
+footer {
+    color: rgb(13, 13, 65);
+}
+@media all and (min-width: 768px) {
+    #profile {
+        flex-wrap: nowrap;
+}
